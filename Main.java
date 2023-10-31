@@ -1,10 +1,9 @@
 import java.util.Scanner;
 
 /**
- * class limas berfungsi untuk menghitung volume limas
+ * class limas berfungsi untuk menginput atribut dari alasluas tinggi dan volume dari limas
  */
 class Limas {
-    // Atribut
     private double alasLuas;
     private double tinggi;
     private double volume;
@@ -19,7 +18,9 @@ class Limas {
         this.tinggi = tinggi;
     }
 
-    // Metode untuk menghitung volume
+    /** metode untuk menghitung volume
+     *
+     */
     public void hitungVolume() {
         this.volume = (1.0/3.0) * this.alasLuas * this.tinggi;
     }
@@ -33,6 +34,9 @@ class Limas {
     }
 }
 
+/**mainclass dan output yang akan diakses oleh user
+ *
+ */
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
